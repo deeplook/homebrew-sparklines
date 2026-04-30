@@ -21,6 +21,6 @@ class Sparklines < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/sparklines --version")
-    assert_match "▃▁▄", shell_output("#{bin}/sparklines 3 1 4")
+    assert_match "▆▁█", shell_output("#{bin}/sparklines 3 1 4")
   end
 end
