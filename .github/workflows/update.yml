@@ -15,11 +15,7 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@main
 
       - name: Update Python resources
-        run: |
-          TAP_DIR=$(brew --repository)/Library/Taps/deeplook/homebrew-sparklines
-          cp $GITHUB_WORKSPACE/Formula/sparklines.rb $TAP_DIR/Formula/sparklines.rb
-          brew update-python-resources deeplook/sparklines/sparklines
-          cp $TAP_DIR/Formula/sparklines.rb $GITHUB_WORKSPACE/Formula/sparklines.rb
+        run: brew update-python-resources deeplook/sparklines/sparklines
 
       - name: Commit changes (if any)
         uses: stefanzweifel/git-auto-commit-action@v5
