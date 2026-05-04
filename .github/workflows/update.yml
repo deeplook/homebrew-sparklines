@@ -15,7 +15,7 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@main
 
       - name: Tap this repo
-        run: brew tap --force deeplook/sparklines $GITHUB_WORKSPACE
+        run: brew untap deeplook/sparklines && brew tap deeplook/sparklines $GITHUB_WORKSPACE
 
       - name: Update Python resources
         run: brew update-python-resources deeplook/sparklines/sparklines
