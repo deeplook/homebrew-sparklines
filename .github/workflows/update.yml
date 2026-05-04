@@ -12,10 +12,13 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
+        uses: Homebrew/actions/setup-homebrew@main
+
+      - name: Tap this repo
+        run: brew tap deeplook/sparklines $GITHUB_WORKSPACE
 
       - name: Update Python resources
-        run: brew update-python-resources Formula/sparklines.rb
+        run: brew update-python-resources deeplook/sparklines/sparklines
 
       - name: Commit changes (if any)
         uses: stefanzweifel/git-auto-commit-action@v5
