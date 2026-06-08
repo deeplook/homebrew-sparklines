@@ -3,8 +3,8 @@ class Sparklines < Formula
 
   desc "Generate sparklines for numbers using Unicode characters only"
   homepage "https://github.com/deeplook/sparklines"
-  url "https://files.pythonhosted.org/packages/1d/28/ef17c14c68e85b1f987d9ad64aa24f62592154f100206a097ffc545e4510/sparklines-0.7.0.tar.gz"
-  sha256 "efd2ff5126dac53ea4212c1e225f286beaf1907b35204465b65010db2eec4b2a"
+  url "https://files.pythonhosted.org/packages/be/52/3e3c437c665397047e2c9364e27f53f85024c57fe990f422a30593fd8c98/sparklines-1.0.0.tar.gz"
+  sha256 "eee3ed5ac6dc954096ab092ce336941050eca790e2f33f85de65a4ea0a43cf74"
   license "MIT"
   head "https://github.com/deeplook/sparklines.git", branch: "master"
 
